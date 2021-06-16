@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class penyakit_model extends CI_Model {
+	//untuk get database data penyakit
     public function get_penyakit()
 	{
 		$this->db->select('*');
@@ -9,13 +10,13 @@ class penyakit_model extends CI_Model {
 		return $this->db->get()->result();
     }
     
-    // add penyakit
+    // untuk add penyakit masukan ke database
 	public function add_penyakit($data)
 	{
 		return $this->db->insert("penyakit", $data);
     }
 
-    // edit penyakit
+    // untuk edit penyakit
 	public function edit_penyakit($id_penyakit, $data)
 	{
 		$this->db->set($data);

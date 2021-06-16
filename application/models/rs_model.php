@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class rs_model extends CI_Model {
+	#untuk get database rumah sakit dari Data base
 	public function get_rs()
 	{
 		$this->db->select('*');
@@ -9,13 +10,13 @@ class rs_model extends CI_Model {
 		return $this->db->get()->result();
     }
 
-    // add rs
+    // untuk add RS dari Database
 	public function add_rs($data)
 	{
 		return $this->db->insert("rumah_sakit", $data);
     }
 
-    // edit rs
+    // untuk edit RS dari database
 	public function edit_rs($id_rs, $data)
 	{
 		$this->db->set($data);

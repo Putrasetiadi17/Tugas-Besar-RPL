@@ -13,8 +13,8 @@
     </head>
 	
 	<body>
-		<form method="post" action="<?php echo base_url(); ?>index.php/main_con/login_admin">
-			<h2>Login</h2>
+		<form method="post" action="<?php echo base_url(); ?>index.php/main_con/regis_admin">
+			<h2>Regiis</h2>
             <?php if (isset($error_message)) { ?>
 			<div class="alert alert-danger" role="alert">
 				<?= $error_message ?>
@@ -26,10 +26,13 @@
 			<div class="form-group">
 				<input type="password" class="form-control" name="password" placeholder="Password" required>
 			</div>
-			<button type="submit" class="btn btn-primary">Login</button>
-            <a class="btn btn-primary" href="<?php echo base_url(); ?>index.php/main_con/regis">Daftar</a>
+            <div class="form-group">
+				<input type="text" class="form-control" name="username" placeholder="Nama" required>
+			</div>
+			<button type="submit" class="btn btn-primary">Regis</button>
+            <a class="btn btn-primary" href="<?php echo base_url(); ?>index.php/main_con/login">sudah ada akun</a>
 		</form>
-        
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"

@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   ..:: SOAL ::.. 
   3. Fill BASE URL. Line 31.
 */
-$config['base_url'] = 'http://localhost/Tubes-Webpro-Kelompok-3-master/';
+$config['base_url'] = 'http://localhost/Kelompok4/';
 
 /*
 |--------------------------------------------------------------------------
